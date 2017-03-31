@@ -1,0 +1,6 @@
+framework module Pods_ronapei_talk {
+  umbrella header "Pods-ronapei talk-umbrella.h"
+
+  export *
+  module * { export * }
+}

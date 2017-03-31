@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C8F2E34A9F1B6A7BD12415668A49FB22EE94E62B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C8F2E34A9F1B6A7BD12415668A49FB22EE94E62B" : 9223372036854775807,
+    "D1C60938BBB152D3EC5D4ABB9E54BA7B34AAAF1A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "92C05668-29A1-4A93-8672-328708F25747",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C8F2E34A9F1B6A7BD12415668A49FB22EE94E62B" : "ronapei%20talk\/",
+    "D1C60938BBB152D3EC5D4ABB9E54BA7B34AAAF1A" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ronapei talk",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ronapei talk.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/praisedphrase\/ronApeiTalk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C8F2E34A9F1B6A7BD12415668A49FB22EE94E62B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/praisedphrase\/coding-for-ios-developer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D1C60938BBB152D3EC5D4ABB9E54BA7B34AAAF1A"
+    }
+  ]
+}

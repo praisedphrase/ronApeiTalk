@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Unpack message from Firebase DataSnapshot
         let messageSnapshot: FIRDataSnapshot! = self.messages[indexPath.row]
         guard let message = messageSnapshot.value as? [String:String] else { return cell }
-        let name = message["text"] ?? "[text]"
+        let text = message["text"] ?? "[text]"
         cell.textLabel?.text = text
         return cell
     }

@@ -8,5 +8,5 @@ target 'ronapei talk' do
   # Pods for ronapei talk
   pod 'Firebase/Core'
   pod 'Firebase/Database'
-
+  pod 'Firebase/Auth'
 end

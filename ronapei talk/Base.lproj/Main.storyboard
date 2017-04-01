@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Pre Auth View Controller-->
         <scene sceneID="hmB-69-PIg">
             <objects>
-                <viewController id="WUI-8B-AaE" sceneMemberID="viewController">
+                <viewController id="WUI-8B-AaE" customClass="PreAuthViewController" customModule="ronapei_talk" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8pE-w3-gye"/>
                         <viewControllerLayoutGuide type="bottom" id="4jW-ed-t9m"/>
@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oR0-6t-Csh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="-559.97001499250382"/>
+            <point key="canvasLocation" x="686" y="-561"/>
         </scene>
         <!--Auth View Controller-->
         <scene sceneID="8gN-Ub-RmC">
@@ -103,11 +103,63 @@
                     <connections>
                         <outlet property="emailTextField" destination="wtM-T4-CbQ" id="mu9-HI-aNY"/>
                         <outlet property="passwordTextField" destination="y86-xk-Nhz" id="89Q-kf-TQX"/>
+                        <segue destination="1fZ-tu-fQU" kind="show" identifier="ToMain" id="Cq3-KO-gI8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9CS-Qt-550" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749.5999999999999" y="-561.76911544227892"/>
+            <point key="canvasLocation" x="1486" y="-561"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="jv5-FX-4D3">
+            <objects>
+                <viewController id="1fZ-tu-fQU" customClass="MainViewController" customModule="ronapei_talk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wHp-ru-E4n"/>
+                        <viewControllerLayoutGuide type="bottom" id="g6z-97-vPM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KZq-Ym-rmP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0s-QJ-vDg">
+                                <rect key="frame" x="165" y="323" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b41-Og-Jn0">
+                                <rect key="frame" x="161" y="352" width="52" height="30"/>
+                                <state key="normal" title="로그아웃"/>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="1fZ-tu-fQU" eventType="touchUpInside" id="5Hh-kT-rd0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIq-Lj-hNy">
+                                <rect key="frame" x="164" y="390" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="7UO-gy-SBH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V0s-QJ-vDg" firstAttribute="centerX" secondItem="b41-Og-Jn0" secondAttribute="centerX" id="4hp-MZ-e1M"/>
+                            <constraint firstItem="MIq-Lj-hNy" firstAttribute="top" secondItem="b41-Og-Jn0" secondAttribute="bottom" constant="8" symbolic="YES" id="NdE-g1-9vz"/>
+                            <constraint firstItem="V0s-QJ-vDg" firstAttribute="trailing" secondItem="MIq-Lj-hNy" secondAttribute="trailing" id="SlF-Y1-o7F"/>
+                            <constraint firstItem="b41-Og-Jn0" firstAttribute="top" secondItem="V0s-QJ-vDg" secondAttribute="bottom" constant="8" symbolic="YES" id="aZr-IU-xd2"/>
+                            <constraint firstItem="V0s-QJ-vDg" firstAttribute="centerY" secondItem="KZq-Ym-rmP" secondAttribute="centerY" id="iYS-No-1rT"/>
+                            <constraint firstItem="b41-Og-Jn0" firstAttribute="centerX" secondItem="KZq-Ym-rmP" secondAttribute="centerX" id="qAg-Id-EL0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="V0s-QJ-vDg" id="2WC-Zb-XDB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pjT-gd-AxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2239" y="-561"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -201,7 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
+            <point key="canvasLocation" x="3006" y="-562"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MVc-el-2bt">
